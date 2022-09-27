@@ -1,4 +1,4 @@
-package com.dayAssignment;
+package com.dayAssignment.email;
 
 public class InvalidEmailException extends Exception{
 
