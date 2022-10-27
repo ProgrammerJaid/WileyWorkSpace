@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-beans-5.3.8.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-beans-5.3.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-beans-5.3.8-sources.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-context-5.3.8.jar" sourcepath="E:/spring-framework-5.3.8/libs/spring-beans-5.3.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-context-5.3.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-context-5.3.8-sources.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-core-5.3.8.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-core-5.3.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-core-5.3.8-sources.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-expression-5.3.8.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-expression-5.3.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-expression-5.3.8-sources.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-web-5.3.8.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-web-5.3.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-web-5.3.8-sources.jar"/>
+	<classpathentry kind="lib" path="E:/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-aop-5.3.8.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-aop-5.3.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-aop-5.3.8-sources.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-jdbc-5.3.8.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-jdbc-5.3.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-jdbc-5.3.8-sources.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-tx-5.3.8.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-tx-5.3.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/spring-framework-5.3.8/libs/spring-tx-5.3.8-sources.jar"/>
+	<classpathentry kind="lib" path="/Day 16/mysql-connector-java-8.0.27 (1) - Copy.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

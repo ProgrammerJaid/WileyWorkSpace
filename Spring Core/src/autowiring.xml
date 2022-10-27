@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd"
+    xmlns:p="http://www.springframework.org/schema/p">
+    
+    <!-- If you have multiple address bean then it create ambiguity for resolving this we give primary-->
+    <bean id="address" class="com.wiley_spring.Address" p:city="KGP" primary="true"/>
+    <bean id="add" class="com.wiley_spring.Address" p:city="Kolkata"/>
+	<bean id="emp" class="com.wiley_spring.auto_wire.Employee" autowire="byType" p:id="110" p:name="Jaid"/>
+	<bean id="emp1" class="com.wiley_spring.auto_wire.Employee" autowire="byName" p:id="111" p:name="Shivam"/>
+    
+</beans>

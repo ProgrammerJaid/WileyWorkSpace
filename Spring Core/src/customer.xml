@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"
+    xmlns:p="http://www.springframework.org/schema/p">
+
+ 
+ 	<bean id="cust1" class="com.wiley_spring.collection.Customer">
+ 		<property name="id" value="101"/>
+ 		<property name="name" value="Sk Jaid"/>
+ 	</bean>
+ 	
+ 	<bean id="cust2" class="com.wiley_spring.collection.Customer">
+ 		<property name="id" value="101"/>
+ 		<property name="name" value="Sk Jaid"/>
+ 	</bean>
+ 	
+ 	<bean id="cust5" class="com.wiley_spring.collection.Customer"
+ 	p:id="110" p:name="Mohit"/>
+ 	
+ 	<bean id="cust3" class="com.wiley_spring.collection.Customer">
+ 		<property name="id" value="103"/>
+ 		<property name="name" value="Deepak Maurya"/>
+ 	</bean>
+ 	
+ 	<bean id="cust4" class="com.wiley_spring.collection.Customer">
+ 		<property name="id" value="101"/>
+ 		<property name="name" value="Sk Jaid"/>
+ 	</bean>
+ 	
+ 	<bean id="custlist" class="com.wiley_spring.collection.CustomerSet">
+ 		<property name="customers">
+ 			<set>
+ 				<ref bean="cust1"/>
+ 				<ref bean="cust2"/>
+ 				<ref bean="cust3"/>
+ 				<ref bean="cust4"/>
+ 				<ref bean="cust5"/>
+ 			</set>
+ 		</property>
+ 	</bean>
+ 	
+ 	<bean id="custmap" class="com.wiley_spring.collection.CustomerMap">
+ 		<property name="customers">
+ 			<map>
+ 				<entry key="101" value-ref="cust1"/>
+ 				<entry key="102" value-ref="cust2"/>
+ 				<entry key="103" value-ref="cust3"/>
+ 				<entry key="104" value-ref="cust5"/>
+ 			</map>
+ 		</property>
+ 	</bean>
+ 	
+ 	<bean id="single" class="com.wiley_spring.collection.Customer" scope="singleton" p:id="121" p:name="Sagar"/>
+ 	<bean id="multiple" class="com.wiley_spring.collection.Customer" scope="prototype" p:id="120" p:name="Naga"/>
+ 	
+</beans>

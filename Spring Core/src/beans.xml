@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    
+    <bean id="emp1" class="com.wiley_spring.Employee">
+    	<property name="id" value="101"/>
+    	<property name="name" value="John Doe"/>
+    </bean>
+    
+    <bean id="emp2" class="com.wiley_spring.Employee">
+    	<property name="id" value="102" />
+    	<property name="name" value="Sk Jaid"/>
+    </bean>
+    
+    <!-- Constructor work. -->
+    <bean id="empConst1" class="com.wiley_spring.Employee">
+    	<constructor-arg value="103" index="0" />
+    	<constructor-arg value="Shivam sahal" index="1"/>
+    </bean>
+    
+    <bean id="empConst2" class="com.wiley_spring.Employee">
+    	<constructor-arg value="Mohit rathod"/>
+    	<constructor-arg value="Shaurya"/>
+    </bean>
+    
+    <bean id="add2" class="com.wiley_spring.Address">
+    	<property name="city" value="Kolkata"/>
+    </bean>
+    
+</beans>

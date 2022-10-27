@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+<import resource="classpath:beans.xml"/>
+    
+    <bean id ="add1" class="com.wiley_spring.Address">
+    	<property name="city" value="Bangalore"/>
+    </bean>
+    
+    <bean id="emp10" class="com.wiley_spring.Employee">
+    	<constructor-arg value="110"/>
+    	<constructor-arg value="Sagar Sutar"/>
+    	<constructor-arg value="JavaBots"/>
+    	<constructor-arg ref="add1"/>
+    </bean>
+    
+    <!-- foreign bean injection via getters -->
+    <bean id="emp12" class="com.wiley_spring.Employee">
+    	<property name="id" value="112"/>
+    	<property name="name" value="Naga"/>
+    	<property name="dept" value="JavaBots"/>
+    	<property name="add">
+    		<ref bean="add2"/>
+    	</property>
+    </bean>
+    
+    
+    <!-- foreign bean injection via constructor arguments -->
+    <bean id="emp11" class="com.wiley_spring.Employee">
+    	<constructor-arg value="111"/>
+    	<constructor-arg value="Shivam Salal"/>
+    	<constructor-arg value="JavaBots"/>
+    	<constructor-arg ><ref bean="add2"/></constructor-arg>
+    </bean>
+    
+    
+    <!--<bean id="employeeList" class="com.wiley." -->
+    
+    <bean id="emp_set" class="com.wiley_spring.EmployeeSet">
+    	<property name="uniqueEmp">
+    		<set>
+    			<ref bean="emp11"/>
+    			<ref bean="emp12"/>
+    			<ref bean="emp10"/>
+    		</set>
+    	</property>
+    </bean>
+    
+</beans>
