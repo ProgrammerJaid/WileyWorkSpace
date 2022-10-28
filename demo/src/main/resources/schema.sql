@@ -1,0 +1,4 @@
+--CREATE TABLE students(
+--	id INT PRIMARY KEY,
+	--full_name VARCHAR(50)
+--);
